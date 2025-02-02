@@ -5,8 +5,9 @@
 
 body{
     display: flex;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
+
 }
 
 .whole{
@@ -116,11 +117,13 @@ body{
 .aproject{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
     width: 250px;
     text-align: center;
     transition: 0.5s;
-    margin: 3px;
+    margin: 10px;
+    height:250px;
+    padding: 10px;
+    transform:perspective(1000px) rotatex(30deg);
     
 }
 
@@ -135,9 +138,11 @@ body{
     font-weight: 500;
 }
 .aproject:hover{
-    transform: scale(1.05);
+    transform:scale(1.05);
+    box-shadow: 0.5px 0.5px 7px -1px black;
+    border: 1px solid;
+    
 }
-
 .whole{
     opacity: 0;
     animation-name: fadein;
@@ -152,7 +157,7 @@ body{
 
 #z{
     position: sticky;
-    bottom: 20px;
+    bottom: 10px
 }
 .bar{
     
@@ -165,23 +170,25 @@ body{
 }
 #foot{
     display: flex;
-    box-shadow: 0.5px 0.5px 7px 0.5px;
+    box-shadow: 0.5px 0.5px 3px 0.5px;
     border-radius: 30px;
     margin-top: 30px;
-    background-color: rgb(225,225,225,0.9);
     backdrop-filter: blur(100%);
+    align-items: center;
 }
 .bar img{
-    height: 35px;
-    margin: 10px;
-    transition: 0.5s;
+    height: 30px;
+    margin: 6px 5px 4px 5px;
+    transition: 0.2s;
     border-radius: 100%;
-    box-shadow: 0.5px 0.5px 7px 0px;
+    box-shadow: 0.5px 0.5px 5px -1px black;
+    font-style: none;
     
 }
 .bar img:hover{
     transform:scale(1.2);
     cursor: pointer;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
 }
