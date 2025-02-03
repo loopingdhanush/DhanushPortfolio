@@ -111,7 +111,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 10px;
+    height: max-content;
 }
 
 .aproject{
@@ -119,23 +119,29 @@ body{
     flex-direction: column;
     width: 250px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.2s;
     margin: 10px;
     height:250px;
     padding: 10px;
     transform:perspective(1000px) rotatex(30deg);
-    
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .aproject img{
     width:250px;
     border:1px solid;
     box-shadow: 0px 1px 10px 0px;
+    
 }
 .aproject p{
     color: rgb(40, 40, 40);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 .aproject:hover{
     transform:scale(1.05);
@@ -154,6 +160,17 @@ body{
     0%{opacity: 0;}
     100%{opacity: 100;}
 }
+
+@media (max-width:650px){
+    .projects{
+        justify-content: center;
+    }
+    .aproject{
+        margin: 5px;
+        
+    }
+}
+
 
 #z{
     position: sticky;
